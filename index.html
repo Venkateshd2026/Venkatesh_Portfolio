@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venkatesh | Galaxy Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="starfield"></canvas>
+
+    <div class="space-gradient"></div>
+    <div class="nebula nebula-left"></div>
+    <div class="nebula nebula-right"></div>
+
+    <header class="nav">
+      <div class="nav__logo">V<span>.</span></div>
+      <nav class="nav__links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#languages">Languages</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="section hero" data-reveal>
+        <div class="hero__content">
+          <div class="hero__left">
+            <p class="hero__eyebrow"> Welcome to my universe</p>
+            <h1 class="hero__title">
+              Hi, I'm
+              <span id="nameInteractive" class="hero__name">
+                Venkatesh D
+              </span>
+              <span class="hero__wave"></span>
+            </h1>
+            <div class="hero__typing">
+              <span id="heroTyping"></span
+              ><span class="hero__typing-cursor">|</span>
+            </div>
+            <!-- <div class="hero__roles" data-roles>
+              <span class="hero__role">Java Full Stack Developer</span>
+              <span class="hero__role">Frontend Developer</span>
+              <span class="hero__role">AI-enthusiast</span>
+            </div> -->
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a href="assets/3VC22CS180.pdf" class="btn btn--ghost" download="Venkatesh_Resume.pdf">Download Resume</a>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <div class="hero__planet-orbit">
+              <div class="hero__planet"></div>
+              <div class="hero__planet-ring hero__planet-ring--outer"></div>
+              <div class="hero__planet-ring hero__planet-ring--inner"></div>
+            </div>
+
+            <div class="hero__photo-frame tilt" data-tilt>
+              <img
+                src="3VC22CS180_VENKATESH.D_CSE.JPG"
+                alt="Venkatesh"
+                class="hero__photo-img"
+              />
+            </div>
+
+            <div class="hero__astronaut"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__subtitle">
+            A quick orbit around who I am and what I love to build.
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about__left">
+            <div class="card glass about__card">
+              <p class="about__text">
+                I am a dedicated Computer Science Engineering student with hands-on experience in Java, MySQL, and frontend technologies. Currently working as a Software Development Intern at KodNest Technologies, where I gain real-world exposure to application development and testing. I enjoy solving complex problems, building secure systems, and continuously improving my technical expertise. I build scalable web applications and innovative blockchain-based solutions that merge performance, security, and delightful user experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__right">
+            <div class="about-photo-card glass">
+              <div class="about-photo-card__inner">
+                <img
+                  src="assets/about-photo.png"
+                  alt="Venkatesh"
+                  class="about-photo-card__img"
+                  width="400"
+                  height="533"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">
+            Selected work from my development journey.
+          </p>
+        </div>
+
+        <div class="projects">
+          <!-- Placement Readiness Platform -->
+          <article class="project-card glass tilt" data-tilt>
+            <div class="project-card__header">
+              <h3>Placement Readiness Platform</h3>
+            </div>
+            <p class="project-card__description">
+              A platform designed to help students prepare for placements with structured learning paths and readiness tools.
+            </p>
+            <p class="project-card__stack">
+              <strong>Tech:</strong> Web app, dashboards, data visualization
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="https://platform-git-main-venkateshd2026-5282s-projects.vercel.app/"
+                class="btn btn--primary-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Project
+              </a>
+            </div>
+          </article>
+
+          <!-- AI Resume Builder -->
+          <article class="project-card glass tilt" data-tilt>
+            <div class="project-card__header">
+              <h3>AI Resume Builder</h3>
+            </div>
+            <p class="project-card__description">
+              An AI-powered resume builder that helps users generate professional resumes quickly and efficiently.
+            </p>
+            <p class="project-card__stack">
+              <strong>Tech:</strong> AI assistance, web UI, form handling
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="https://airesumebuilder-git-master-venkateshd2026-5282s-projects.vercel.app/"
+                class="btn btn--primary-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Project
+              </a>
+            </div>
+          </article>
+
+          <!-- Weather Forecast App -->
+          <article class="project-card glass tilt" data-tilt>
+            <div class="project-card__header">
+              <h3>Weather Forecast App</h3>
+            </div>
+            <p class="project-card__description">
+              A web application that displays real-time weather forecast data using external APIs and a clean, responsive UI.
+            </p>
+            <p class="project-card__stack">
+              <strong>Tech:</strong> JavaScript, Weather API, responsive UI
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="https://wather-forecast-git-master-venkateshd2026-5282s-projects.vercel.app/"
+                class="btn btn--primary-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Project
+              </a>
+            </div>
+          </article>
+
+          <!-- College Event Portal -->
+          <article class="project-card glass tilt" data-tilt>
+            <div class="project-card__header">
+              <h3>College Event Portal</h3>
+            </div>
+            <p class="project-card__description">
+              A web portal to manage and organize college events, registrations, and announcements efficiently.
+            </p>
+            <p class="project-card__stack">
+              <strong>Tech:</strong> Web app, backend API, database
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="https://github.com/Venkateshd2026/College_Event_Management"
+                class="btn btn--primary-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Project
+              </a>
+            </div>
+          </article>
+
+          <!-- Organ Donation Platform -->
+          <article class="project-card glass tilt" data-tilt>
+            <div class="project-card__header">
+              <h3>Organ Donation Platform</h3>
+            </div>
+            <p class="project-card__description">
+              A blockchain-based system for secure organ donation registration and donor–recipient matching.
+            </p>
+            <p class="project-card__stack">
+              <strong>Tech:</strong> Blockchain, smart contracts, web frontend
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="https://github.com/Venkateshd2026/organ_donation"
+                class="btn btn--primary-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Project
+              </a>
+            </div>
+          </article>
+
+          <!-- Personal Portfolio Website -->
+          <article class="project-card glass tilt" data-tilt>
+            <div class="project-card__header">
+              <h3>Personal Portfolio Website</h3>
+            </div>
+            <p class="project-card__description">
+              A responsive developer portfolio showcasing my projects, skills, achievements, certifications, and contact information with modern UI and interactive features.
+            </p>
+            <p class="project-card__stack">
+              <strong>Tech:</strong> HTML, CSS, JavaScript
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="index.html#hero"
+                class="btn btn--primary-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section id="languages" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">Languages</h2>
+          <p class="section__subtitle">Languages I speak and write.</p>
+        </div>
+        <div class="languages">
+          <div class="languages__grid">
+            <div class="language-card glass">
+              <span class="language-card__name">Kannada</span>
+            </div>
+            <div class="language-card glass">
+              <span class="language-card__name">English</span>
+            </div>
+            <div class="language-card glass">
+              <span class="language-card__name">Hindi</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES (viewable certificate files) -->
+      <section id="certificates" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">Certificates</h2>
+          <p class="section__subtitle">Event and course certificates with linked PDFs.</p>
+        </div>
+        <div class="certificates-grid" id="certificatesGrid">
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/Hackthon-Certificate.png">
+            <h3 class="certificate-card__title">Brains & Bytes-25 Hackathon</h3>
+            <p class="certificate-card__org">RYMEC – Department of Computer Science & Engineering</p>
+            <p class="certificate-card__meta">Event: Brains & Bytes-25 Hackathon · Ballari · 2025</p>
+            <p class="certificate-card__year">Year: 2025</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/Devops_certificate.png">
+            <h3 class="certificate-card__title">DevOps and its Applications</h3>
+            <p class="certificate-card__org">RYM Engineering College (New Age Innovation Network)</p>
+            <p class="certificate-card__meta">Student Development Program · 17 May – 23 May 2025</p>
+            <p class="certificate-card__year">Year: 2025</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/iot_workshop_certifcate.png">
+            <h3 class="certificate-card__title">Internet of Things (IoT) Workshop</h3>
+            <p class="certificate-card__org">RYMEC CSE Department & Global Sourcing India Pvt Ltd</p>
+            <p class="certificate-card__meta">IoT Workshop · 9 March – 14 March 2023</p>
+            <p class="certificate-card__year">Year: 2023</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/htmlbootcamp.pdf">
+            <h3 class="certificate-card__title">HTML & CSS Bootcamp</h3>
+            <p class="certificate-card__org">LetsUpgrade</p>
+            <p class="certificate-card__meta">1 Sept – 3 Sept 2025</p>
+            <p class="certificate-card__year">Year: 2025</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/java udemy.pdf">
+            <h3 class="certificate-card__title">Java Programming – Beginner to Master</h3>
+            <p class="certificate-card__org">Udemy · Instructor: Abdul Bari</p>
+            <p class="certificate-card__meta">Learn Java Programming – Beginner to Master</p>
+            <p class="certificate-card__year">Year: 2025</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/javabootcamp.pdf">
+            <h3 class="certificate-card__title">Java Bootcamp</h3>
+            <p class="certificate-card__org">LetsUpgrade</p>
+            <p class="certificate-card__meta">11 Aug – 13 Aug 2025</p>
+            <p class="certificate-card__year">Year: 2025</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+          <article class="certificate-card glass tilt" data-tilt data-certificate="certificates/sql_boot _camp.pdf">
+            <h3 class="certificate-card__title">SQL Bootcamp</h3>
+            <p class="certificate-card__org">LetsUpgrade</p>
+            <p class="certificate-card__meta">18 Sept – 20 Sept 2025</p>
+            <p class="certificate-card__year">Year: 2025</p>
+            <button type="button" class="btn btn--ghost-sm certificate-card__btn">View Certificate</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section id="achievements" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">Achievements</h2>
+          <p class="section__subtitle">
+            Key accomplishments and recognitions from my academic and technical journey.
+          </p>
+        </div>
+
+        <div class="achievements">
+          <div class="achievement-card glass tilt" data-tilt>
+            <span class="achievement-card__number">Top 8</span>
+            <span class="achievement-card__label">
+              out of <strong>78 teams</strong> in the Brains &amp; Bytes-25 State-Level Hackathon (CSE, RYMEC)
+            </span>
+          </div>
+          <div class="achievement-card glass tilt" data-tilt>
+            <span class="achievement-card__number">1st Prize</span>
+            <span class="achievement-card__label">
+              Project Demonstration Station among <strong>30 teams</strong> during Brains &amp; Bytes-25 Hackathon
+            </span>
+          </div>
+          <div class="achievement-card glass tilt" data-tilt>
+            <span class="achievement-card__number">Top 15</span>
+            <span class="achievement-card__label">
+              consistent academic rank within the <strong>Top 15</strong> across all CSE semesters
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" data-reveal>
+        <div class="section__header">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__subtitle">
+            Let’s build something meaningful together.
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="card glass contact__info">
+            <div class="contact-row">
+              <div class="contact-row__icon">
+                <!-- Email icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect
+                    x="3"
+                    y="5"
+                    width="18"
+                    height="14"
+                    rx="3"
+                    fill="#020617"
+                  />
+                  <path
+                    d="M5 7.5 12 12l7-4.5"
+                    fill="none"
+                    stroke="#38bdf8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="contact-row__content">
+                <div class="contact-row__label">Email</div>
+                <a href="mailto:venki.cse.rymec@gmail.com">venki.cse.rymec@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <a href="https://www.linkedin.com/in/venkatesh-d-085973363/" class="contact-row__icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <!-- LinkedIn icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="3" fill="#1d4ed8" />
+                  <rect x="6.5" y="10" width="2" height="7" fill="#eff6ff" />
+                  <circle cx="7.5" cy="7.2" r="1.2" fill="#eff6ff" />
+                  <path
+                    d="M12 10h1.9v1c.3-.6 1.1-1.2 2.2-1.2 2 0 2.9 1.2 2.9 3.3V17h-2v-3.5c0-1-.3-1.7-1.2-1.7-.9 0-1.4.6-1.4 1.7V17H12v-7z"
+                    fill="#eff6ff"
+                  />
+                </svg>
+              </a>
+              <div class="contact-row__content">
+                <div class="contact-row__label">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/venkatesh-d-085973363/" target="_blank" rel="noopener noreferrer"
+                  >linkedin.com/in/venkatesh-d-085973363</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <a href="https://github.com/Venkateshd2026" class="contact-row__icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <!-- GitHub icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" fill="#020617" />
+                  <path
+                    d="M12 7c-2.3 0-4.2 1.9-4.2 4.3 0 1.9 1.2 3.4 2.8 3.9-.1-.2-.1-.4-.1-.7v-1c0-.3.1-.6.3-.8-0.9-.1-1.8-.5-1.8-2 0-.4.1-.7.3-1-0.1-.2-.2-.7 0-1 0 0 .4-.1 1.1.4.3-.1.7-.2 1.1-.2s.8.1 1.1.2c.7-.5 1.1-.4 1.1-.4.2.3.1.8 0 1 .2.3.3.6.3 1 0 1.5-.9 1.9-1.8 2 .1.1.2.3.2.6v1.3c0 .2 0 .4-.1.5 1.6-.5 2.8-2 2.8-3.9C16.2 8.9 14.3 7 12 7z"
+                    fill="#e5e7eb"
+                  />
+                </svg>
+              </a>
+              <div class="contact-row__content">
+                <div class="contact-row__label">GitHub</div>
+                <a href="https://github.com/Venkateshd2026" target="_blank" rel="noopener noreferrer"
+                  >github.com/Venkateshd2026</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__action">
+            <button class="btn btn--primary contact__btn">
+              <span class="contact__btn-glow"></span>
+              <span>Open Contact Form</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Modal -->
+      <div class="contact-modal" id="contactModal" aria-hidden="true">
+        <div class="contact-modal__backdrop"></div>
+        <div class="contact-modal__dialog glass" role="dialog" aria-modal="true">
+          <button class="contact-modal__close" aria-label="Close contact form">
+            ×
+          </button>
+          <h3>Contact Form</h3>
+          <p class="contact-modal__subtitle">
+            Share a bit about your project or opportunity.
+          </p>
+          <form class="contact-modal__form">
+            <div class="contact-modal__field">
+              <label for="contactName">Name</label>
+              <input id="contactName" name="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="contact-modal__field">
+              <label for="contactEmail">Email</label>
+              <input
+                id="contactEmail"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="contact-modal__field">
+              <label for="contactMessage">Message</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="4"
+                placeholder="Tell me about your idea or role..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary contact-modal__submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Certificate viewer modal -->
+      <div class="certificate-modal" id="certificateModal" aria-hidden="true">
+        <div class="certificate-modal__backdrop"></div>
+        <div class="certificate-modal__dialog glass" role="dialog" aria-modal="true" aria-label="Certificate preview">
+          <button type="button" class="certificate-modal__close" aria-label="Close certificate view">×</button>
+          <div class="certificate-modal__glow"></div>
+          <div class="certificate-modal__viewer">
+            <iframe class="certificate-modal__iframe" id="certificateIframe" title="Certificate"></iframe>
+            <img class="certificate-modal__img" id="certificateImg" alt="Certificate" style="display: none;" />
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Mini Robot Assistant -->
+    <div id="assistantBot" class="assistant-bot" aria-label="AI assistant" role="button">
+      <div class="assistant-bot__body">
+        <div class="assistant-bot__head">
+          <div class="assistant-bot__antenna"></div>
+          <div class="assistant-bot__face">
+            <span class="assistant-bot__eye assistant-bot__eye--left"></span>
+            <span class="assistant-bot__eye assistant-bot__eye--right"></span>
+            <span class="assistant-bot__mouth"></span>
+          </div>
+        </div>
+        <div class="assistant-bot__torso">
+          <div class="assistant-bot__screen">
+            <span class="assistant-bot__code">&lt;/&gt;</span>
+          </div>
+          <div class="assistant-bot__arm assistant-bot__arm--left"></div>
+          <div class="assistant-bot__arm assistant-bot__arm--right"></div>
+        </div>
+        <div class="assistant-bot__laptop">
+          <div class="assistant-bot__laptop-screen"></div>
+        </div>
+      </div>
+      <div id="assistantBubble" class="assistant-bot__bubble">
+        Hi! I'm Venkatesh's AI assistant 👋 Welcome to my portfolio.
+      </div>
+      <button
+        id="assistantHint"
+        class="assistant-bot__hint"
+        type="button"
+        aria-label="AI assistant hint"
+      ></button>
+    </div>
+
+    <!-- Floating Social Media Dock -->
+    <div id="socialDock" class="social-dock" aria-label="Social media links">
+      <div class="social-dock__orbit-layer"></div>
+      <div class="social-dock__inner">
+        <a
+          href="https://www.instagram.com/venkateshd_24?igsh=NTkwbXZwN3NhNjFz"
+          target="_blank"
+          rel="noreferrer"
+          class="social-dock__item social-dock__item--instagram"
+        >
+          <span class="social-dock__tooltip">Instagram</span>
+          <span class="social-dock__icon">
+            <!-- Instagram SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient
+                  id="igGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#f97316" />
+                  <stop offset="40%" stop-color="#ec4899" />
+                  <stop offset="100%" stop-color="#6366f1" />
+                </linearGradient>
+              </defs>
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                ry="5"
+                fill="url(#igGradient)"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="white"
+                stroke-width="1.7"
+              />
+              <circle cx="17" cy="7" r="1.1" fill="#fef3c7" />
+            </svg>
+          </span>
+        </a>
+
+        <a
+          href="https://wa.me/917892374757"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-dock__item social-dock__item--whatsapp"
+          aria-label="Message me on WhatsApp"
+        >
+          <span class="social-dock__tooltip">WhatsApp</span>
+          <span class="social-dock__icon">
+            <!-- WhatsApp SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" fill="#22c55e" />
+              <path
+                d="M9.2 8.3c.1-.3.3-.4.5-.4h.4c.1 0 .3 0 .4.3.1.3.5 1 .5 1.1.1.1.1.2 0 .3-.1.1-.1.2-.2.3s-.2.2-.3.3c-.1.1-.3.2-.1.5.2.3.8 1.2 1.7 1.6.9.4 1 .3 1.2.2.2-.1.5-.4.6-.6.1-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.3.1.4.2v.3c0 .3-.2.9-.6 1.3-.4.4-1.1.7-1.8.7-.7 0-1.4-.2-2-.5-.6-.3-1.4-.7-2.2-1.5-.6-.6-1.1-1.3-1.4-2-.3-.7-.4-1.3-.3-1.8.1-.5.4-.8.5-.9z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/venkatesh-d-085973363/"
+          target="_blank"
+          rel="noreferrer"
+          class="social-dock__item social-dock__item--linkedin"
+        >
+          <span class="social-dock__tooltip">LinkedIn</span>
+          <span class="social-dock__icon">
+            <!-- LinkedIn SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" fill="#2563eb" />
+              <rect x="6.5" y="9.5" width="2" height="7" fill="#eff6ff" />
+              <circle cx="7.5" cy="7" r="1.2" fill="#eff6ff" />
+              <path
+                d="M12 9.5h1.9v1c.3-.6 1.1-1.2 2.2-1.2 2 0 2.9 1.2 2.9 3.3v3.9h-2v-3.5c0-1-.3-1.7-1.2-1.7-.9 0-1.4.6-1.4 1.7v3.5H12v-7z"
+                fill="#eff6ff"
+              />
+            </svg>
+          </span>
+        </a>
+
+        <a
+          href="mailto:venki.cse.rymec@gmail.com"
+          class="social-dock__item social-dock__item--gmail"
+          aria-label="Email me at venki.cse.rymec@gmail.com"
+        >
+          <span class="social-dock__tooltip">Gmail</span>
+          <span class="social-dock__icon">
+            <!-- Gmail SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="6" width="18" height="12" rx="2" fill="#0f172a" />
+              <path
+                d="M5 8.5 12 13l7-4.5"
+                fill="none"
+                stroke="#f97373"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 18V8.5L12 13l7-4.5V18"
+                fill="none"
+                stroke="#e5e7eb"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Venkatesh. Crafted in the galaxy.</p>
+      <p class="footer__visitors" id="visitorCounter" aria-label="Visitor counter"></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
